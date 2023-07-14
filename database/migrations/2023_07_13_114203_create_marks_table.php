@@ -21,8 +21,8 @@ return new class extends Migration
             $table->integer('sub_id2_mark');
             $table->string('sub_id3');
             $table->integer('sub_id3_mark');
-            $table->integer('total_mark');
-            $table->string('result');
+            $table->integer('total_mark')->nullable(true);
+            $table->string('result')->nullable(true);
             $table->timestamps();
         });
     }
